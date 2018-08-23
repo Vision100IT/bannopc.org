@@ -10,7 +10,7 @@ class GospelPartnership extends Component {
             <div className="row">
               <div id="top-content-left-region" className="top-content-left col-xs-12 col-md-6 text-center-sm">
                 <div id="page-title-block" className="page-title block">
-                  <h1>Resources</h1>
+                  <h1>Gospel Partnership</h1>
                 </div>
               </div>
 
