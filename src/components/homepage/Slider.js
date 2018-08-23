@@ -22,8 +22,7 @@ const slides = [{"src": background,
                     "alt": "",
                     "caption":
                       {
-                       "header": "Welcome to BPC!",
-                        "description": "Disciple-making disciples of Jesus"
+                       "header": null
                       }}
                   ];
 
@@ -37,7 +36,7 @@ class Slider extends Component {
             <li key={_.uniqueId()}>
                 <figure>
                     <img className="img-responsive img-full-width" src={slide.src} width="1440" height="900" />
-                    <figcaption className="overlay overlay-30 text-center">
+                    <figcaption className="text-center">
                       <div className="highlighted-slider-2-content">
                         {slide.caption.header ? (<h1 className="slider-title">{slide.caption.header}</h1>) : (<h1></h1>)}
                         {slide.caption.description ? (<p className="slider-description">{slide.caption.description}</p>) : (<p></p>)}
