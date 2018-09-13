@@ -11,3 +11,17 @@
       color: #7b6953 !important;
     }
 }
+
+@font-face {
+    font-family: 'KGWhYYouGoTtABeSoMeAn';
+    src: url('fonts/KGWhYYouGoTtABeSoMeAn.eot');
+    src: url('fonts/KGWhYYouGoTtABeSoMeAn.ttf')
+        format('truetype');  
+    src: url('fonts/KGWhYyOuGoTtABeSoMeAn.svg');  
+    src: url('fonts/KGWhYyOuGoTtABeSoMeAn.woff');  
+}
+
+.tb-megamenu .nav > li > a {
+    font-family: 'KGWhYYouGoTtABeSoMeAn', sans-serif;
+    text-transform: uppercase;
+}
