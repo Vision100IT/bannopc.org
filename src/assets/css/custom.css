@@ -1,0 +1,13 @@
+.bg-color-custom
+{
+    background-color: #c2d8e3;
+}
+
+@media (max-width: 767px) {
+  
+    .nestor-main-menu .navbar-toggle {
+      border: 1px solid #c2b49a !important;
+      background: #deb408 !important;
+      color: #7b6953 !important;
+    }
+}

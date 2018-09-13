@@ -47,9 +47,6 @@ class Navigation extends Component {
 
       <div className="content">
         <div  className="tb-megamenu tb-megamenu-main-menu">
-          <button data-target=".nav-collapse" data-toggle="collapse" className="btn btn-navbar tb-megamenu-button" type="button">
-          <i className="fa fa-reorder"></i>
-        </button>
         <div className="nav-collapse  always-show">
 
         <ul  className="tb-megamenu-nav nav level-0 items-5">

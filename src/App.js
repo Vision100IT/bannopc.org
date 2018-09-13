@@ -27,6 +27,7 @@ import './assets/nestor/css/style.css';
 import './assets/css/fontyourface/font.css';
 
 import './assets/nestor/css/color/brown.css';
+import './assets/css/custom.css';
 
 class App extends Component {
   render() {

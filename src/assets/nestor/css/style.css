@@ -3121,7 +3121,7 @@ label {
 .tb-megamenu .nav li.dropdown.active > .dropdown-toggle { background-color: white; color: #c2b49a; }
 .tb-megamenu .nav li.dropdown.open > .dropdown-toggle { color: #c2b49a; }
 .tb-megamenu .nav { float: right; }
-.tb-megamenu .nav > li > a { border-right: 0; color: #777; padding: 16px 20px;}
+.tb-megamenu .nav > li > a { border-right: 0; color: #7b6953; padding: 16px 20px;}
 .tb-megamenu .nav > li > a:focus, .tb-megamenu .nav > li > a:hover { color: #c2b49a; }
 .tb-megamenu .nav > li > a:hover { color: #c2b49a; }
 .tb-megamenu .dropdown-menu { border-bottom-color: #c2b49a; margin-top: 5px; }
