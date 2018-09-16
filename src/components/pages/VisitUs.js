@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import WhereToFindUs from '../homepage/WhereToFindUs';
 
 class VisitUs extends Component {
 
@@ -34,28 +35,29 @@ class VisitUs extends Component {
                       <div className="node node-page clearfix">
                         <div className="content">
 
-                        <p>Have a picture of google map like this site - http://vc.org.au <br/>
-                        Contact: goal: get a proper BPC email address.<br/>
-                        Pastor Jon Brown 0435 456 701</p>
-
-                        </div>
-
-
-
-                </div>
-                  </div>
-                </div>  </div>
-
+                          <strong>Email: </strong> <a href="mailto:info@bannopc.org">info@bannopc.org</a><br />
+                          <strong>Phone: </strong>Pastor Jon Brown 0435 456 701
+                          <WhereToFindUs height="450px" colWidths="col-md-12 col-xs-12" />
 
 
                         </div>
-
 
 
 
                       </div>
                     </div>
-                  </div>
+                  </div>  </div>
+
+
+
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
       </section>
     );
   }

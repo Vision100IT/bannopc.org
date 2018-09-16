@@ -1,9 +1,9 @@
 /* eslint-disable */
 import React, { Component } from 'react';
 
-import LatestSermon from './LatestSermon';
+//import LatestSermon from './LatestSermon';
 import WhereToFindUs from './WhereToFindUs';
-import UpcomingEvents from './UpcomingEvents';
+//import UpcomingEvents from './UpcomingEvents';
 
 class HomePageContent extends Component {
   render() {
@@ -12,9 +12,9 @@ class HomePageContent extends Component {
         <div className="content-2 bg-color-white text-color-default" >
           <div className="container">
             <div className="row">
-              <LatestSermon />
-              <WhereToFindUs />
-              <UpcomingEvents />
+              {/*<LatestSermon />*/}
+              <WhereToFindUs height="360px" colWidths="col-md-4 col-xs-12" />
+              {/*<UpcomingEvents />*/}
             </div>
           </div>
         </div>
