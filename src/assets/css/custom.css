@@ -37,3 +37,7 @@
    #content-map-footer>p{
     color: #777;
    }
+
+   #map_canvas_footer>div>div> .gm-style-mtc{
+       display: none;
+   }
