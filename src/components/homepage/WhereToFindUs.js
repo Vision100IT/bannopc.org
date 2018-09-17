@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React, { Component } from 'react';
+import GoogleMap from '../GoogleMap';
 
 
 class WhereToFindUs extends Component {
@@ -14,8 +15,9 @@ class WhereToFindUs extends Component {
             <div className="block block-block">
               <h2 >Where to Find Us</h2>
               <div className="content">
-                <div id="map_canvas" className="google-map" style={{ maxHeight: this.props.height }}></div>
+                <GoogleMap id="map_canvas" height={this.props.height} width="100%" />
                 <div><a href="https://goo.gl/maps/x6aitfUS8ZU2">Bannockburn Presbyterian Church</a></div>
+                <div>10am Sundays</div>
                 <div>18 Moore Street</div>
                 <div>Bannockburn, Victoria</div>  </div>
             </div>

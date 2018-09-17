@@ -13,7 +13,7 @@ class HomePageContent extends Component {
           <div className="container">
             <div className="row">
               {/*<LatestSermon />*/}
-              <WhereToFindUs height="360px" colWidths="col-md-4 col-xs-12" />
+              {/*<WhereToFindUs height="360px" colWidths="col-md-4 col-xs-12" />*/}
               {/*<UpcomingEvents />*/}
             </div>
           </div>

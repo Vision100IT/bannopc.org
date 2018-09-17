@@ -34,10 +34,12 @@ class VisitUs extends Component {
                     <div className="content">
                       <div className="node node-page clearfix">
                         <div className="content">
+                          <h2>Sundays 10am</h2>
 
+                          <h5>Contact Information</h5>
                           <strong>Email: </strong> <a href="mailto:info@bannopc.org">info@bannopc.org</a><br />
                           <strong>Phone: </strong>Pastor Jon Brown 0435 456 701
-                          <WhereToFindUs height="450px" colWidths="col-md-12 col-xs-12" />
+                          <WhereToFindUs id="map_canvas" height="450px" colWidths="col-md-12 col-xs-12" />
 
 
                         </div>
