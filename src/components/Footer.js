@@ -25,8 +25,7 @@ class Footer extends Component {
                           <GoogleMap id="map_canvas_footer" height="200px" width="200px"></GoogleMap>
                         </div>
                         <p>
-                          Sundays 10am,
-                          <a href="https://goo.gl/maps/x6aitfUS8ZU2">18 Moore Street</a>,<br />
+                          Sundays 10am, <a href="https://goo.gl/maps/x6aitfUS8ZU2">18 Moore Street</a>,<br />
                           Bannockburn, Victoria, 3331
                         </p>
                       </div> {/* /footer-address */}  </div>
