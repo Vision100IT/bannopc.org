@@ -33,29 +33,30 @@ class GospelPartnership extends Component {
                     <div className="content">
                       <div className="node node-page clearfix">
                         <div className="content">
+                          {/*
 
                         <ul>
                           <li>Partnering with BPC through giving. Have details.</li>
                           <li>Gospel Partners - a list of various ministries we support.</li>
-                        </ul>
+                        </ul>*/}
+                          This page is currently under construction.
                         </div>
-
-
-
-                </div>
-                  </div>
-                </div>  </div>
-
-
-
-                        </div>
-
-
 
 
                       </div>
                     </div>
-                  </div>
+                  </div>  </div>
+
+
+
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
       </section>
     );
   }

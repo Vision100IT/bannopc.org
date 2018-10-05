@@ -34,43 +34,46 @@ class Resources extends Component {
                       <div className="node node-page clearfix">
                         <div className="content">
 
-                        <h3>Sermons</h3>
+                          <h3>Sermons</h3>
+                          A link to our sermons will be available soon.
 
                         <h3>Good Books</h3>
 
-                        <h4>Sceptical about Jesus?</h4>
-                        Reasons for God - Tim Keller<br/>
-                        John Dickson - Doubters Guides
+                          <h4>Sceptical about Jesus?</h4>
+                          <a href="https://www.amazon.com.au/Reason-God-Belief-age-scepticism-ebook/dp/B00319M6TK/" rel="noopener noreferrer" target="_blank">The Reason for God: Belief in an Age of Scepticism by Timothy Keller</a><br />
+                          <a href="https://www.amazon.com.au/Doubters-Guide-Jesus-Introduction-Believers-ebook/dp/B00VEYI0NK/" rel="noopener noreferrer" target="_blank">A Doubter's Guide to Jesus: An Introduction to the Man from Nazareth for Believers and Skeptics by John Dickson</a><br />
+                          <a href="https://www.amazon.com.au/Doubters-Guide-Bible-Bestseller-Believers-ebook/dp/B00L0SZIHQ/" rel="noopener noreferrer" target="_blank">A Doubter's Guide to the Bible: Inside History’s Bestseller for Believers and Skeptics by John Dickson</a><br />
+                          <a href="https://www.amazon.com.au/Doubters-Guide-Ten-Commandments-Better-ebook/dp/B01863JKV2/" rel="noopener noreferrer" target="_blank">A Doubter's Guide to the Ten Commandments: How, for Better or Worse, Our Ideas about the Good Life Come from Moses and Jesus by John Dickson</a>
 
-                        <h4>Wanting to grow in your faith?</h4>
-                        Knowing God - J. I Packer
-                        Respectable Sins - Jerry Bridges
+                          <h4>Wanting to grow in your faith?</h4>
+                          <a href="https://www.amazon.com.au/Knowing-God-J-I-Packer-ebook/dp/B005LWR98S" rel="noopener noreferrer" target="_blank">Knowing God by J. I. Packer</a><br />
+                          <a href="https://www.amazon.com.au/Respectable-Sins-Jerry-Bridges-ebook/dp/B01N56NUIG" rel="noopener noreferrer" target="_blank">Respectable Sins by Jerry Bridges</a>
 
-                        <h4>Struggling with suffering?</h4>
-                        Walking with God - Tim Keller
+                          <h4>Struggling with Suffering?</h4>
+                          <a href="https://www.amazon.com.au/Walking-God-through-Pain-Suffering-ebook/dp/B00CIVLV66" rel="noopener noreferrer" target="_blank">Walking with God through Pain and Suffering by Timothy Keller</a>
 
-                        <h3>Helpful web resources</h3>
-                        Videos and websites with good content.
-                        Centre for Public Christianity
-                        Gospel Coalition
-                        </div>
-
-
-
-                </div>
-                  </div>
-                </div>  </div>
-
-
+                          <h4>Helpful Web Resources</h4>
+                          <a href="https://au.thegospelcoalition.org/" rel="noopener noreferrer" target="_blank">The Gospel Coalition</a><br />
+                          <a href="https://www.publicchristianity.org/" rel="noopener noreferrer" target="_blank">The Centre for Public Christianity</a>
 
                         </div>
-
 
 
 
                       </div>
                     </div>
-                  </div>
+                  </div>  </div>
+
+
+
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
       </section>
     );
   }

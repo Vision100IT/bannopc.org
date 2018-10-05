@@ -16,17 +16,17 @@ class OtherPageWrapper extends Component {
   render() {
     return (
       <section>
-      <Switch>
-        <Route exact path="/WhoWeAre" component={WhoWeAre}/>
-        <Route exact path="/WhatWeDo" component={WhatWeDo}/>
-        <Route exact path="/VisitUs" component={VisitUs}/>
-        <Route exact path="/Resources" component={Resources}/>
-        <Route exact path="/Partnership" component={GospelPartnership}/>
+        <Switch>
+          <Route exact path="/whoweare" component={WhoWeAre} />
+          <Route exact path="/whatwedo" component={WhatWeDo} />
+          <Route exact path="/visitus" component={VisitUs} />
+          <Route exact path="/resources" component={Resources} />
+          <Route exact path="/partnership" component={GospelPartnership} />
 
 
 
-        <Route path="/*" component={OtherPageContent} />
-      </Switch>
+          <Route path="/*" component={OtherPageContent} />
+        </Switch>
 
       </section>
     );
