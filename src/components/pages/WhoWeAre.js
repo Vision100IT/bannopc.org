@@ -67,19 +67,17 @@ class WhoWeAre extends Component {
                             fulfils our deepest longings. As Evangelicals the gospel message is at the front and centre of all we do.
                         </p>
 
-                          <p>BPC is apart of the Presbyterian Church of Australia.
-                        What we believe about God and worship is more fully outlined in the <a href="https://www.presbyterian.org.au/index.php/resources/westminster-confession-of-faith" rel="noopener noreferrer" target="_blank">Westminster Confession</a>.</p>
+                          <p>BPC is apart of the Presbyterian Church of Australia. What we believe about God and worship is more fully outlined in the <a href="https://www.presbyterian.org.au/index.php/resources/westminster-confession-of-faith" rel="noopener noreferrer" target="_blank">Westminster Confession</a>.</p>
 
                           <h2>On Sundays</h2>
 
                           <p>
                             On Sundays we want the gospel message to shape all we do. Our preaching, music, and prayers aim to do this in a way that connects with our local community.
-                        </p>
+                          </p>
 
                           <p>
-                            At BPC, we believe children are valued members of the covenant community.We encourage families (parents and children) to worship together.We don’t have a Sunday School.
-                            We believe worshiping with our children is both biblical and beneficial.
-                        </p>
+                            At BPC, we believe children are valued members of the covenant community. We encourage families (parents and children) to worship together. We don’t have a Sunday School. We believe worshiping with our children is both biblical and beneficial.
+                         </p>
 
                         </div>
 

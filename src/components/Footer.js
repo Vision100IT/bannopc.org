@@ -54,8 +54,12 @@ class Footer extends Component {
 
                     <div className="content">
                       <div className="footer-phone text-center">
-                        <i className="icon ion-social-facebook-outline size-32 margin-bottom-20"></i>
-                        <p><a href="http://facebook.com/bannockburnpressiechurch">facebook.com/bannockburnpressiechurch</a><br /></p>
+                        <i className="icon ion-social-facebook-outline size-32 margin-bottom-20"></i>&nbsp;
+                        <i className="icon ion-social-youtube-outline size-32 margin-bottom-20" style={{ marginLeft: "10px" }}></i>
+                        <p>
+                          <a href="http://facebook.com/bannockburnpressiechurch">facebook.com/bannockburnpressiechurch</a><br />
+                          <a href="https://www.youtube.com/channel/UCAjweVNxQ_A_jOdCwv_TfVA/videos">Bannockburn on YouTube</a><br />
+                        </p>
                       </div>  </div>
                   </div>  </div>
               </div> {/* /footer-third-column-region */}
@@ -112,7 +116,7 @@ class Footer extends Component {
           <i className="ion-ios7-arrow-up"></i>
         </div>
         {/* End of Back to top button */}
-      </section>
+      </section >
     );
   }
 }

@@ -34,31 +34,32 @@ class WhatWeDo extends Component {
                       <div className="node node-page clearfix">
                         <div className="content">
 
-                        <p>Weekly studies (because we’re always learning) - various times and days during the week. <br/>
-                        Mercy and Justice - helping out in our world on various events, responding to issues and doing good wherever we possibly can.<br/>
-                        Christianity explored - for any people who want to learn more about Jesus, church, Christianity, or simply understand ‘what is the deal?’<br/>
-                        Christmas and Easter - these are big celebrations for us, come and join in! Mainly Music <br/>
-                        Annual events - quarterly organised activities where we can ‘hang out’ and enjoy each others company.<br/>
-                        Current annual events.</p>
+                          <ul className="no-list-style">
+                            <li>Weekly studies (because we’re always learning) - various times and days during the week.</li>
+                            <li>Mercy and Justice - helping out in our world on various events, responding to issues and doing good wherever we possibly can.</li>
+                            <li>Christianity explored - for any people who want to learn more about Jesus, church, Christianity, or simply understand ‘what is the deal?’</li>
+                            <li>Christmas and Easter - these are big celebrations for us, come and join in! Mainly Music</li>
+                            <li>Annual events - quarterly organised activities where we can ‘hang out’ and enjoy each others company.</li>
+                          </ul>
 
                         </div>
-
-
-
-                </div>
-                  </div>
-                </div>  </div>
-
-
-
-                        </div>
-
 
 
 
                       </div>
                     </div>
-                  </div>
+                  </div>  </div>
+
+
+
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
       </section>
     );
   }

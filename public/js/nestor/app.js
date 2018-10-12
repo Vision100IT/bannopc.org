@@ -150,15 +150,15 @@
         new google.maps.Point(0, 0),
         new google.maps.Point(10, 30));
 
-      var companyMarker = new google.maps.Marker({
+      var companyMarkerFooter = new google.maps.Marker({
         position: latlng,
         map: map,
         icon: companyLogo,
         title: gTitle
       });
 
-      var contentString = '<div id="content-map-footer">' +
-        '<h3 style="margin-top: 0px;">' + gTitle + '</h3>' +
+      /*var contentString = '<div id="content-map-footer">' +
+        '<h4 style="margin-top: 0px;">' + gTitle + '</h4>' +
         '<p>' + gDescription + '</p>' +
         '</div>';
 
@@ -166,9 +166,9 @@
         content: contentString
       });
 
-      google.maps.event.addListener(companyMarker, 'click', function () {
-        infowindow.open(map, companyMarker);
-      });
+      google.maps.event.addListener(companyMarkerFooter, 'click', function () {
+        infowindow.open(map, companyMarkerFooter);
+      });*/
 
     }
 

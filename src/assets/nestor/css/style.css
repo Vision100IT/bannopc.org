@@ -911,7 +911,7 @@ header {
 .nestor-main-menu .nav > li > a:focus,
 .nestor-main-menu .nav > li:hover > a,
 .nestor-main-menu .nav > li:focus > a {
-  color: #777;
+  color: #000;
   background-color: transparent;
 }
 
@@ -936,7 +936,7 @@ header {
 }
 
 .nestor-main-menu .dropdown-menu > li > a {
-  color: #cdcdcd;
+  color: #000;
   font-weight: 300;
 }
 

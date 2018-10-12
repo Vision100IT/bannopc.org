@@ -50,3 +50,22 @@
         margin-top: 70px;
        }
    }
+   @media (min-width: 500px){
+   .logo  {
+    max-height: 155px;
+   }}
+
+
+   body{
+       color: #000;
+   }
+
+   button.navbar-toggle{
+       font-weight: bold;
+       font-size: 18px;
+   }
+
+   .no-list-style{
+       list-style: none;
+       line-height: 32px;
+   }

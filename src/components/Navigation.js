@@ -1,7 +1,8 @@
 /* eslint-disable */
 import React, { Component } from 'react';
 
-import logo from '../assets/logo.png';
+//import logo from '../assets/logo.png';
+import logo from '../assets/bpc_logo.svg';
 
 class Navigation extends Component {
   render() {
