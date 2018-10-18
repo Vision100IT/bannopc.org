@@ -34,11 +34,24 @@ class VisitUs extends Component {
                     <div className="content">
                       <div className="node node-page clearfix">
                         <div className="content">
-                          <h2>Sundays 10am</h2>
+                          <h2>On Sundays at 10am</h2>
+                          <p>
+                          <em>“Let the word of Christ dwell in you richly” (Colossans 3:16) </em></p>
+                          <p>
+                             On Sundays we want the gospel message to shape all we do. Our preaching, music, and prayers aim to do this in a way that connects with our local community. <br/>
+                          </p>
+                          <br/>
+                          <h4>Kids in Church</h4>
+                          <p>
+                              At BPC we really value children as apart of our community. We encourage families (parents and children) to worship together. 
+                              We don’t have a Sunday School (kids church) but we have other ways of making sure children are very involved. 
+                              We have a kid’s talk and song during the service. We also have facilities like a cry room, change room, as well as a play ground.<br/><br/>
 
-                          <h5>Contact Information</h5>
-                          <strong>Email: </strong> <a href="mailto:info@bannopc.org">info@bannopc.org</a><br />
-                          <strong>Phone: </strong>Pastor Jon Brown 0435 456 701
+                              We know trying to get little ones to sit still is difficult but we believe worshiping with our children makes it very worthwhile. 
+                              So if you’re worried about your children making too much noise or being a distraction, please don’t! We appreciate the joyful noise they make!
+
+
+                          </p>
                           <WhereToFindUs id="map_canvas" height="450px" colWidths="col-md-12 col-xs-12" />
 
 

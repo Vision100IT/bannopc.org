@@ -37,6 +37,13 @@ class Resources extends Component {
                           <h3>Sermons</h3>
                           A link to our sermons will be available soon.
 
+                          <h3>Partnership</h3>
+                          <ul>
+                            <li>Further details on how you can partner with us will be availale soon.</li>
+                           {/* <li>Partnering with BPC through giving.</li>
+                            <li>Our Gospel Partners - TBA</li>*/} 
+                          </ul>
+
                         <h3>Good Books</h3>
 
                           <h4>Sceptical about Jesus?</h4>

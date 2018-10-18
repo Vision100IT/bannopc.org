@@ -9,7 +9,8 @@ import WhoWeAre from './pages/WhoWeAre';
 import WhatWeDo from './pages/WhatWeDo';
 import VisitUs from './pages/VisitUs';
 import Resources from './pages/Resources';
-import GospelPartnership from './pages/GospelPartnership';
+//import GospelPartnership from './pages/GospelPartnership';
+import ContactUs from './pages/ContactUs';
 
 
 class OtherPageWrapper extends Component {
@@ -21,7 +22,8 @@ class OtherPageWrapper extends Component {
           <Route exact path="/whatwedo" component={WhatWeDo} />
           <Route exact path="/visitus" component={VisitUs} />
           <Route exact path="/resources" component={Resources} />
-          <Route exact path="/partnership" component={GospelPartnership} />
+          {/*<Route exact path="/partnership" component={GospelPartnership} />*/}
+          <Route exact path="/contact" component={ContactUs} />
 
 
 

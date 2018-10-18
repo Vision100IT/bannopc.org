@@ -37,7 +37,7 @@ class Navigation extends Component {
                           <li><a href="/whatwedo" title="">What We Do</a></li>
                           <li><a href="/visitus" title="">Visit us @ 10am Sundays</a></li>
                           <li><a href="/resources" title="">Resources</a></li>
-                          <li><a href="/partnership" title="">Partnership</a></li></ul>
+                          <li><a href="/contact" title="">Contact Us</a></li></ul>
                       </div> {/* /navbar-collapse */}
                     </nav>
                   </div>
@@ -67,7 +67,7 @@ class Navigation extends Component {
                           </li>
 
                           <li className="tb-megamenu-item level-1 mega">
-                            <a href="/partnership">Partnership</a>
+                            <a href="/contact">Contact Us</a>
                           </li>
                         </ul>
                       </div>
