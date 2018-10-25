@@ -16,7 +16,7 @@ import '../../../assets/css/allsermonspage/css_uyDmOe2sjPMSKgtMaUqVxDRgnvOYkOnT_
 import '../../../assets/css/allsermonspage/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css';
 import '../../../assets/css/allsermonspage/css_YLWdW6wV7Ski57_eSxMdUCyO9zKEBlsYDkC-PNa2_KM.css';
 
-const PER_PAGE = 25;
+const PER_PAGE = 6;
 
 class Sermons extends Component {
     constructor() {
@@ -68,6 +68,9 @@ class Sermons extends Component {
     loadMoreSermons(page) {
         var that = this;
         var offset = (page + 1) * PER_PAGE
+        if (this.state.sermonPages === page + 1) {
+            this.setState({ sermonsRemaining: false });
+        }
         this.setState({ page: page + 1 })
         getFromDrupalAPI('all_sermons_api?offset=' + offset + '&limit=' + PER_PAGE, function (data) {
             that.setState({ sermons: [...that.state.sermons, ...data], viewingRefinedList: false, loadingSermons: false })
@@ -262,7 +265,7 @@ class Sermons extends Component {
                                                 {/*Only display the waypoint after number of pages has been set in state*/}
                                                 {this.state.sermonPages ? <Waypoint onEnter={this.handleWaypointEnter}></Waypoint> : ''}
 
-                                                {this.state.sermonsRemaining && !this.state.loadingSermons && !this.state.viewingRefinedList ? <div className="text-center"><button class="btn btn-primary" onClick={this.handleWaypointEnter}>Load More...</button></div> : ''}
+                                                {this.state.sermonsRemaining && !this.state.loadingSermons && !this.state.viewingRefinedList ? <div className="text-center"><button className="btn btn-primary" onClick={this.handleWaypointEnter}>Load More...</button></div> : ''}
                                                 {this.state.sermonsRemaining ? '' : <div className="text-center">No more sermons to load</div>}
                                             </div>
 
