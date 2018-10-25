@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import validator from 'validator';
 
-//import { postToWebform } from '../../utils/postToAPI';
+import { postToWebform } from '../../utils/postToAPI';
 
 class ContactUs extends Component {
   constructor() {
@@ -49,17 +49,17 @@ class ContactUs extends Component {
       /*handle posting to drupal and show success message*/
       //strip 4byte utf8 characters / emojis with .replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, '')
       var form = new FormData();
-      form.append("webform", "");
+      form.append("webform", "3665314d-1e6a-4440-b53f-57cb6d4da853");
       form.append("submission[data][1][values][0]", this.state.name.replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, ''));
       form.append("submission[data][2][values][0]", this.state.email.replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, ''));
       form.append("submission[data][3][values][0]", this.state.message.replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, ''));
       form.append("submission[data][4][values][0]", this.state.subject.replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, ''));
 
-      /*var that = this;
+      var that = this;
       postToWebform(form, function (data) {
         that.setState({ submissionID: data.sid })
         that.setState({ formSubmitted: true })
-      })*/
+      })
     }
 
   }
@@ -70,7 +70,6 @@ class ContactUs extends Component {
       <section>
 
         <div id="block-block-54" className="block block-block">
-        <p><em>The below form is currently purely cosmetic but will be finalised soon, please contact us using the email address above.</em></p>
           <form onSubmit={this.handleSubmit}><div><div className="form-item form-group form-type-textfield form-item-name">
             <label htmlFor="edit-name">Your name <span className="form-required" title="This field is required.">*</span></label>
             <input className="form-control form-text required" type="text" id="edit-name" name="name" size="60" maxLength="255" onChange={this.handleChange.bind(this)} value={this.state.name} />
@@ -149,7 +148,7 @@ class ContactUs extends Component {
                           <h5>Address</h5>
                           <p>Come visit us on Sundays @ 10am:</p>
                           <p>Bannockburn Presbyterian Church<br />
-                            18 Moore Street,<br /> 
+                            18 Moore Street,<br />
                             Bannockburn, Victoria, 3331</p>
                         </div>
 
@@ -167,7 +166,7 @@ class ContactUs extends Component {
 
 
                 <div className="content">
-                
+
                   {!this.state.formSubmitted ? contactForm : messageSent}
 
                 </div>

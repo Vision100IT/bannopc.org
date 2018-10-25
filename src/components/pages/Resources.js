@@ -35,16 +35,14 @@ class Resources extends Component {
                         <div className="content">
 
                           <h3>Sermons</h3>
-                          A link to our sermons will be available soon.
+                          <h5>A searchable list of our sermons can be found <a href="/sermons">here</a>.</h5>
 
-                          <h3>Partnership</h3>
-                          <ul>
-                            <li>Further details on how you can partner with us will be availale soon.</li>
-                           {/* <li>Partnering with BPC through giving.</li>
-                            <li>Our Gospel Partners - TBA</li>*/} 
-                          </ul>
 
-                        <h3>Good Books</h3>
+                          <h5>Our sermons are also available to watch on <a href="https://www.youtube.com/channel/UCAjweVNxQ_A_jOdCwv_TfVA/videos" target="_blank" rel="noreferrer noopener">YouTube</a>.</h5>
+
+
+                          <br />
+                          <h3>Good Books</h3>
 
                           <h4>Sceptical about Jesus?</h4>
                           <a href="https://www.amazon.com.au/Reason-God-Belief-age-scepticism-ebook/dp/B00319M6TK/" rel="noopener noreferrer" target="_blank">The Reason for God: Belief in an Age of Scepticism by Timothy Keller</a><br />
