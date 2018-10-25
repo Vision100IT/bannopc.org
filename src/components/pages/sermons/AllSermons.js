@@ -16,7 +16,7 @@ import '../../../assets/css/allsermonspage/css_uyDmOe2sjPMSKgtMaUqVxDRgnvOYkOnT_
 import '../../../assets/css/allsermonspage/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css';
 import '../../../assets/css/allsermonspage/css_YLWdW6wV7Ski57_eSxMdUCyO9zKEBlsYDkC-PNa2_KM.css';
 
-const PER_PAGE = 6;
+const PER_PAGE = 25;
 
 class Sermons extends Component {
     constructor() {
