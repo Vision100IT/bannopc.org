@@ -1,4 +1,3 @@
-/*eslint-disable*/
 import React, { Component } from 'react';
 
 import Waypoint from 'react-waypoint';
@@ -227,8 +226,7 @@ class Sermons extends Component {
                                                         Search: <input type="text" className="form-control" id="searchQuery" value={this.state.searchQuery} onChange={(e) => this.updateSearchQuery(e)} />
                                                     </div>
                                                     <div className="col-md-3">
-                                                        In:
-                <select className="form-control" id="searchType" value={this.state.searchType} onChange={(e) => this.updateSearchType(e)}>
+                                                        In: <select className="form-control" id="searchType" value={this.state.searchType} onChange={(e) => this.updateSearchType(e)}>
                                                             <option value="title">Title</option>
                                                             <option value="preacher">Preacher</option>
                                                             <option value="passage">Bible Passage</option>
@@ -266,11 +264,13 @@ class Sermons extends Component {
                                                 {this.state.sermonPages ? <Waypoint onEnter={this.handleWaypointEnter}></Waypoint> : ''}
 
                                                 {this.state.sermonsRemaining && !this.state.loadingSermons && !this.state.viewingRefinedList ? <div className="text-center"><button className="btn btn-primary" onClick={this.handleWaypointEnter}>Load More...</button></div> : ''}
-                                                {this.state.sermonsRemaining ? '' : <div className="text-center">No more sermons to load</div>}
+                                                {this.state.sermonsRemaining || this.state.viewingRefinedList ? '' : <div className="text-center">No more sermons to load</div>}
                                             </div>
 
 
-                                        </div>  </div> </div>
+                                        </div>
+                                    </div>
+                                </div>
 
 
                             </div>
