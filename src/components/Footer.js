@@ -1,6 +1,7 @@
 /* eslint-disable */
 import React, { Component } from 'react';
 import GoogleMap from './GoogleMap';
+import LatestSermon from './homepage/LatestSermon';
 
 class Footer extends Component {
   render() {
@@ -39,10 +40,11 @@ class Footer extends Component {
 
 
                     <div className="content">
-                      <div className="footer-mail text-center">
-                        <i className="icon ion-ios7-email-outline size-32 margin-bottom-20"></i>
-                        <p><a href="mailto:info@bannopc.org">info@bannopc.org</a></p>
-                      </div> {/* /footer-mail */}  </div>
+                      {/*<div className="footer-mail text-center">
+                        
+                      </div>*/}
+                      <LatestSermon />
+                    </div>
                   </div>  </div>
               </div> {/* /footer-second-column-region */}
 
@@ -53,6 +55,10 @@ class Footer extends Component {
 
 
                     <div className="content">
+                    <div className="footer-mail text-center">
+                        <i className="icon ion-ios7-email-outline size-32 margin-bottom-20"></i>
+                        <p><a href="mailto:info@bannopc.org">info@bannopc.org</a></p>
+                      </div>
                       <div className="footer-phone text-center">
                         <i className="icon ion-social-facebook-outline size-32 margin-bottom-20"></i>&nbsp;
                         <i className="icon ion-social-youtube-outline size-32 margin-bottom-20" style={{ marginLeft: "10px" }}></i>

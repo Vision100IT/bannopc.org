@@ -45,11 +45,10 @@
    }
 
    /*Temp positioning of footer elements due to gmap*/
-   @media (min-width: 992px){
-    .footer-mail, .footer-phone {
-        margin-top: 70px;
+  .footer-mail, .footer-phone {
+        margin-bottom: 70px;
        }
-   }
+ 
    @media (min-width: 500px){
    .logo  {
     max-height: 155px;
