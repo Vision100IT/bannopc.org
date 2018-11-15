@@ -16,6 +16,8 @@ import '../../../assets/css/allsermonspage/css_uyDmOe2sjPMSKgtMaUqVxDRgnvOYkOnT_
 import '../../../assets/css/allsermonspage/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css';
 import '../../../assets/css/allsermonspage/css_YLWdW6wV7Ski57_eSxMdUCyO9zKEBlsYDkC-PNa2_KM.css';
 
+import headerImg from '../../../assets/sermons.png';
+
 const PER_PAGE = 25;
 
 class Sermons extends Component {
@@ -183,7 +185,7 @@ class Sermons extends Component {
 
         return (
             <section>
-                <div id="top-content-region" className="top-content padding-top-15 padding-bottom-15 block-15 bg-color-grayLight1">
+                {/*<div id="top-content-region" className="top-content padding-top-15 padding-bottom-15 block-15 bg-color-grayLight1">
                     <div className="container">
                         <div className="row">
                             <div id="top-content-left-region" className="top-content-left col-xs-12 col-md-6 text-center-sm">
@@ -201,6 +203,14 @@ class Sermons extends Component {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>*/}
+                <div id="top-content-region" className="top-content block-15 bg-color-grayLight1">
+                    <div className="container">
+                        <div className="row">
+
+                            <img className="img img-responsive" src={headerImg} />
                         </div>
                     </div>
                 </div>

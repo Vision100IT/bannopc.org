@@ -1,26 +1,16 @@
 import React, { Component } from 'react';
+import headerImg from '../../assets/resources.png';
 
 class Resources extends Component {
 
   render() {
     return (
       <section>
-        <div id="top-content-region" className="top-content padding-top-15 padding-bottom-15 block-15 bg-color-custom">
+        <div id="top-content-region" className="top-content block-15 bg-color-grayLight1">
           <div className="container">
             <div className="row">
-              <div id="top-content-left-region" className="top-content-left col-xs-12 col-md-6 text-center-sm">
-                <div id="page-title-block" className="page-title block">
-                  <h1>Resources</h1>
-                </div>
-              </div>
 
-              <div id="top-content-right-region" className="top-content-right col-xs-12 col-md-6 text-right text-center-sm">
-                <div id="page-breadcrumbs-block" className="page-breadcrumbs block">
-                  <div className="breadcrumbs">
-                    {/*<a href="/">Home</a>*/}
-                  </div>
-                </div>
-              </div>
+              <img className="img img-responsive" src={headerImg} alt="" />
             </div>
           </div>
         </div>
@@ -37,8 +27,7 @@ class Resources extends Component {
                           <h3>Sermons</h3>
                           <h5>A searchable list of our sermons can be found <a href="/sermons">here</a>.</h5>
 
-
-                          <h5>Our sermons are also available to watch on <a href="https://www.youtube.com/channel/UCAjweVNxQ_A_jOdCwv_TfVA/videos" target="_blank" rel="noreferrer noopener">YouTube</a>.</h5>
+                          <h5>Our sermons are also available to watch on <a href="https://www.youtube.com/channel/UCAjweVNxQ_A_jOdCwv_TfVA/videos" target="_blank" rel="noreferrer noopener">YouTube</a> and you can subscribe to our <a href="https://itunes.apple.com/au/podcast/bannockburn-presbyterian-church/id1440112965?mt=2" rel="noreferrer noopener" target="_blank">podcast</a>.</h5>
 
 
                           <br />
