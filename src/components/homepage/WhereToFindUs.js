@@ -1,12 +1,8 @@
-/* eslint-disable */
 import React, { Component } from 'react';
 import GoogleMap from '../GoogleMap';
 
 
 class WhereToFindUs extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <section>

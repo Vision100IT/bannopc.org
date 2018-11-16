@@ -1,7 +1,5 @@
-/* eslint-disable */
 import React, { Component } from 'react';
 
-//import Navigation from '../Navigation';
 import Slider from './Slider';
 //import Welcome from './Welcome';
 //import HomePageContent from './HomePageContent';

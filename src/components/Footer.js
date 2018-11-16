@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, { Component } from 'react';
 import GoogleMap from './GoogleMap';
 import LatestSermon from './homepage/LatestSermon';

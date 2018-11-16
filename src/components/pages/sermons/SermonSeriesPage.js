@@ -50,7 +50,7 @@ class SermonSeriesPage extends Component {
                             <td style={tdPadding}>{sermon.text ? decode(sermon.text) : ''}</td>
                             <td style={tdPadding}>{decode(sermon.preacher)}</td>
                             <td style={tdPadding}>{sermon.datepreached}</td>
-                            <td style={tdPadding}><a href={sermon.url} target="_blank"> <i className="fa fa-download"></i></a></td>
+                            <td style={tdPadding}><a href={sermon.url} target="_blank" rel="noopener noreferrer"> <i className="fa fa-download"></i></a></td>
                         </tr>
                     )
                 }
@@ -95,7 +95,7 @@ class SermonSeriesPage extends Component {
                                         <div className="content">
 
                                             <div>
-                                                <img className="img-responsive sermon-series-page-image" src={seriesImg ? seriesImg : ''} />
+                                                <img className="img-responsive sermon-series-page-image" src={seriesImg ? seriesImg : ''} alt="" />
                                             </div>
                                             <br />
                                             <div className="view-content">

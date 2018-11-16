@@ -43,22 +43,22 @@ class LatestSermon extends Component {
                     </div>
                   </div>*/}
 
-                  <span>        <div><a href={sermon.node_path}>{decode(sermon.node_title)}</a></div>  </span>
-                  <span>        <div>{decode(sermon.preacher)}</div>  </span>
-                  <span className="views-field views-field-field-sermon">
-                    <span className="field-content">
-                      {/*<div className="mediaelement-audio">
+            <span>        <div><a href={sermon.node_path}>{decode(sermon.node_title)}</a></div>  </span>
+            <span>        <div>{decode(sermon.preacher)}</div>  </span>
+            <span className="views-field views-field-field-sermon">
+              <span className="field-content">
+                {/*<div className="mediaelement-audio">
                       <audio  src={sermon.url} className="mediaelement-formatter-identifier-1522977696-0" controls="controls" ></audio>
                     </div>*/}
-                      <AudioPlayer playlist={[{ url: sermon.url }]} controls={['playpause', 'spacer', 'progress']} />
-                    </span>
-                  </span>
-                  <span className="views-field views-field-field-sermon-1">
-                    <span className="field-content">
-                      <a href={sermon.url}>Download Sermon</a>
-                    </span>
-                  </span>
-                {/*</div>
+                <AudioPlayer playlist={[{ url: sermon.url }]} controls={['playpause', 'spacer', 'progress']} />
+              </span>
+            </span>
+            <span className="views-field views-field-field-sermon-1">
+              <span className="field-content">
+                <a href={sermon.url}>Download Sermon</a>
+              </span>
+            </span>
+            {/*</div>
               </div>
             </div>*/}
           </div>
@@ -70,10 +70,10 @@ class LatestSermon extends Component {
     return (
       <section>
         <div className="col-md-12 col-xs-12">  {/*<div className="region region-content-2-1">
-          <div className="block block-views">*/}  
-            <h2>Latest Sermon</h2>
-            {sermonDetails}
-          </div>
+          <div className="block block-views">*/}
+          <h2>Latest Sermon</h2>
+          {sermonDetails}
+        </div>
         {/*</div>
         </div>*/}
       </section>
