@@ -2,7 +2,6 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 import welcome1 from '../../assets/welcome1.png';
-import christmas2018 from '../../assets/christmas.jpg';
 
 /*
 const slides = [{"src": "https://summerleaschurch.org/sites/summerleaschurch.org/files/styles/image_full_width/public/community%20web%20slider.jpg?itok=wztd4SUb",
@@ -20,7 +19,7 @@ const slides = [{"src": "https://summerleaschurch.org/sites/summerleaschurch.org
 */
 
 const slides = [{
-  "src": christmas2018,
+  "src": welcome1,
   "alt": "",
   "caption":
   {
