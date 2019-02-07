@@ -155,7 +155,8 @@ class ContactUs extends Component {
                         <div class="col-xs-12 col-sm-6 margin-top-xs-40">
                           <h5>Contact Us</h5>
                           <p><b>Facebook:</b> &nbsp;<a href="http://facebook.com/bannockburnpressiechurch">/bannockburnpressiechurch</a><br />
-                            <b>Email:</b>&nbsp;<a href="mailto:info@bannopc.org">info@bannopc.org</a></p>
+                            <b>Email:</b>&nbsp;<a href="mailto:info@bannopc.org">info@bannopc.org</a><br />
+                            <b>Phone:</b>&nbsp; 03 5281 2437</p>
                         </div>
 
                       </div>

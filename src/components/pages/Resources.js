@@ -31,7 +31,7 @@ class Resources extends Component {
 
 
                           <br />
-                          <h3>Good Books</h3>
+                          {/*<h3>Good Books</h3>
 
                           <h4>Sceptical about Jesus?</h4>
                           <a href="https://www.amazon.com.au/Reason-God-Belief-age-scepticism-ebook/dp/B00319M6TK/" rel="noopener noreferrer" target="_blank">The Reason for God: Belief in an Age of Scepticism by Timothy Keller</a><br />
@@ -48,7 +48,19 @@ class Resources extends Component {
 
                           <h4>Helpful Web Resources</h4>
                           <a href="https://au.thegospelcoalition.org/" rel="noopener noreferrer" target="_blank">The Gospel Coalition</a><br />
-                          <a href="https://www.publicchristianity.org/" rel="noopener noreferrer" target="_blank">The Centre for Public Christianity</a>
+                          <a href="https://www.publicchristianity.org/" rel="noopener noreferrer" target="_blank">The Centre for Public Christianity</a>*/}
+
+                          <h3>Other Resources</h3>
+
+                          <h4><a href="https://www.youtube.com/watch?v=nNsWOZSu4VE" rel="noreferrer noopener" target="_blank">Not sure about Jesus?</a></h4>
+
+                          <h4><a href="https://www.youtube.com/watch?v=bPaeo19sQXw" rel="noreferrer noopener" target="_blank">Not sure about the Bible?</a></h4>
+
+                          <h4><a href="https://www.publicchristianity.org/fortheloveofgod/" rel="noreferrer noopener" target="_blank">Not sure about the Church?</a></h4>
+
+                          <h4><a href="https://www.youtube.com/watch?v=ulmaUtbayGY" rel="noreferrer noopener" target="_blank">Struggling with suffering and a good God?</a></h4>
+
+                          <h4><a href="https://au.thegospelcoalition.org/" rel="noreferrer noopener" target="_blank">Looking for helpful resources to grow as a Christian?</a></h4>
 
                         </div>
 
