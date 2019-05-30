@@ -15,6 +15,7 @@ import AllSermons from './pages/sermons/AllSermons';
 import SermonPage from './pages/sermons/SermonPage';
 import SermonSeriesPage from './pages/sermons/SermonSeriesPage';
 import ContactUs from './pages/ContactUs';
+import MainlyMusic from './pages/MainlyMusic';
 
 
 class OtherPageWrapper extends Component {
@@ -28,6 +29,7 @@ class OtherPageWrapper extends Component {
           <Route exact path="/resources" component={Resources} />
           <Route exact path="/partnership" component={GospelPartnership} />
           <Route path="/contact" component={ContactUs} />
+          <Route exact path="/mainlymusic" component={MainlyMusic} />
 
 
           <Route exact path="/sermons" component={AllSermons} />
