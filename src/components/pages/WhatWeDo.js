@@ -28,9 +28,9 @@ class WhatWeDo extends Component {
                             <li>Weekly studies (because we’re always learning) - various times and days during the week.</li>
                             <li>Mercy and Justice - helping out in our world on various events, responding to issues and doing good wherever we possibly can.</li>
                             <li>Christianity explored - for any people who want to learn more about Jesus, church, Christianity, or simply understand ‘what is the deal?’</li>
-                            <li>Christmas and Easter - these are big celebrations for us, come and join in! Mainly Music</li>
+                            <li>Christmas and Easter - these are big celebrations for us, come and join in!</li>
                             <li>Annual events - quarterly organised activities where we can ‘hang out’ and enjoy each others company.</li>
-                            <li><a href="/mainlymusic">Mainly Music</a></li>
+                            <li><a href="/mainlymusic">mainly music</a> - for families of preschoolers</li>
                           </ul>
 
                         </div>

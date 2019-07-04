@@ -26,7 +26,7 @@ class MainlyMusic extends Component {
 
 
                                                     <p>
-                                                        Mainly Music is a fun music group for parents or primary care givers to enjoy together with their young child. Through music, rhythm and rhymes children develop gross and fine motor skills, language, imagination, mathematical and pre-reading skills as well as socialise with others. Families are also given the chance to think about the God-part of life, all in a fun and friendly family environment.
+                                                        mainly music is a fun music group for parents or primary care givers to enjoy together with their young child. Through music, rhythm and rhymes children develop gross and fine motor skills, language, imagination, mathematical and pre-reading skills as well as socialise with others. Families are also given the chance to think about the God-part of life, all in a fun and friendly family environment.
                                                     </p>
 
                                                     <p>
