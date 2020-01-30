@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 //import logo from '../assets/logo.png';
 import logo from '../assets/bpc_logo.svg';
@@ -12,7 +13,7 @@ class Navigation extends Component {
           <div className="row">
 
             <div id="logo-region" className="logo col-xs-12 col-md-3 text-center-sm">
-              <a href="/"><img src={logo} alt="Home" className="logo" /></a>
+              <Link to="/"><img src={logo} alt="Home" className="logo" /></Link>
             </div> {/* /logo-region */}
 
             <div id="menu-region" className="col-xs-12 col-md-9">
@@ -32,13 +33,13 @@ class Navigation extends Component {
                       {/* Navigation links */}
                       <div className="collapse navbar-collapse navbar-ex1-collapse">
                         <ul className="nav navbar-nav navbar-right">
-                          <li className="active"><a href="/" title="" className="active">Home</a></li>
-                          <li><a href="/whoweare" title="">Who We Are</a></li>
-                          <li><a href="/whatwedo" title="">What We Do</a></li>
-                          <li><a href="/visitus" title="">Visit us @ 10am Sundays</a></li>
-                          <li><a href="/sermons" title="">Sermons</a></li>
-                          <li><a href="/resources" title="">Resources</a></li>
-                          <li><a href="/contact" title="">Contact Us</a></li></ul>
+                          <li className="active"><Link to="/" title="" className="active">Home</Link></li>
+                          <li><Link to="/whoweare" title="">Who We Are</Link></li>
+                          <li><Link to="/whatwedo" title="">What We Do</Link></li>
+                          <li><Link to="/visitus" title="">Visit us @ 10am Sundays</Link></li>
+                          <li><Link to="/sermons" title="">Sermons</Link></li>
+                          <li><Link to="/resources" title="">Resources</Link></li>
+                          <li><Link to="/contact" title="">Contact Us</Link></li></ul>
                       </div> {/* /navbar-collapse */}
                     </nav>
                   </div>
@@ -53,26 +54,26 @@ class Navigation extends Component {
 
                         <ul className="tb-megamenu-nav nav level-0 items-5">
                           <li className="tb-megamenu-item level-1 mega">
-                            <a href="/whoweare" >Who We Are</a>
+                            <Link to="/whoweare" >Who We Are</Link>
                           </li>
                           <li className="tb-megamenu-item level-1 mega">
-                            <a href="/whatwedo" >What We Do</a>
-                          </li>
-
-                          <li className="tb-megamenu-item level-1 mega">
-                            <a href="/visitus" >Visit Us</a>
+                            <Link to="/whatwedo" >What We Do</Link>
                           </li>
 
                           <li className="tb-megamenu-item level-1 mega">
-                            <a href="/sermons" >Sermons</a>
+                            <Link to="/visitus" >Visit Us</Link>
                           </li>
 
                           <li className="tb-megamenu-item level-1 mega">
-                            <a href="/resources" >Resources</a>
+                            <Link to="/sermons" >Sermons</Link>
                           </li>
 
                           <li className="tb-megamenu-item level-1 mega">
-                            <a href="/contact">Contact Us</a>
+                            <Link to="/resources" >Resources</Link>
+                          </li>
+
+                          <li className="tb-megamenu-item level-1 mega">
+                            <Link to="/contact">Contact Us</Link>
                           </li>
                         </ul>
                       </div>

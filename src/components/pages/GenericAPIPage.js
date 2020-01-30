@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { getPageContent } from '../../utils/fetchJSON';
-import WhereToFindUs from '../homepage/WhereToFindUs';
 
-export default function VisitUs(pageData, slug) {
+
+export default function GenericAPIPage(pageData, slug) {
     const [data, setData] = useState(pageData);
     const [dataFetched, setDataFetched] = useState(Boolean(pageData));
     const [pageExists, setPageExists] = useState(Boolean(pageData));
@@ -88,7 +88,6 @@ export default function VisitUs(pageData, slug) {
                                         {loading === false && pageExists ? <div className="content" dangerouslySetInnerHTML={{ __html: content }}></div> : ''}
                                         {loading === true ? <div className="content">Loading</div> : ''}
                                         {loading === false && pageExists === false ? <div className="contetnt">{content}</div> : ''}
-                                        {loading === false ? <WhereToFindUs id="map_canvas" height="450px" colWidths="col-md-12 col-xs-12" /> : ''}
                                     </div>
                                 </div>
                             </div>

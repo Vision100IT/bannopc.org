@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { fetchDrupalPages } from './utils/fetchJSON';
 
 import Navigation from './components/Navigation';
 import HomePageWrapper from './components/homepage/HomePageWrapper';
@@ -29,19 +30,40 @@ import './assets/css/fontyourface/font.css';
 import './assets/nestor/css/color/brown.css';
 import './assets/css/custom.css';
 
-class App extends Component {
-  render() {
-    return (
-      <Router>
-        <div className="App">
-          <Route path="*" component={Navigation} />
-          <Route exact path="/" component={HomePageWrapper} />
-          <Route path="/:path" component={OtherPageWrapper} />
-          <Route path="*" component={Footer} />
-        </div>
-      </Router>
-    );
-  }
-}
 
-export default App;
+
+export default function App() {
+  const [pagesData, setPagesData] = useState();
+  const [pagesFetched, setPagesFetched] = useState(false);
+
+  useEffect(() => {
+    if (pagesFetched === false) {
+      fetchDrupalPages().then(result => {
+        let mapped = result.map(item => ({
+          [item.slug.toLowerCase()]: item
+        }));
+        let mappedObj = Object.assign({}, ...mapped);
+        setPagesData(mappedObj);
+        setPagesFetched(true);
+      });
+    }
+  }, [pagesFetched, pagesData]);
+
+  return pagesFetched === true ? (
+    <Router>
+      <div className="App">
+        <Route path="*" component={Navigation} />
+        <Route
+          exact
+          path="/"
+          render={() => (
+            <HomePageWrapper
+            />
+          )}
+        />
+        <Route path="/:path" render={() => <OtherPageWrapper pagesData={pagesData} />} />
+        <Route path="*" component={Footer} />
+      </div>
+    </Router>
+  ) : ('');
+}
