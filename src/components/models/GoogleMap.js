@@ -1,12 +1,37 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
+import {GoogleMap, Marker} from '@react-google-maps/api';
 
-
-class GoogleMap extends Component {
-    render() {
-        return (
-            <div id={this.props.id} className="google-map" style={{ maxHeight: this.props.height, maxWidth: this.props.mapWidth }}></div>
-        );
-    }
+export default function Map({id, height, mapWidth, location, disableUI}) {
+  return (
+      <GoogleMap
+        id={id}
+        mapContainerStyle={{
+          height,
+          width: mapWidth
+        }}
+        zoom={14}
+        center={{
+          lat: location.lat,
+          lng: location.lng
+        }}
+        options={{
+          disableDefaultUI: disableUI
+        }}
+      >
+        <Marker
+          position={{
+            lat: location.lat,
+            lng: location.lng
+          }}
+        />
+      </GoogleMap>
+  );
 }
 
-export default GoogleMap;
+Map.propTypes = {
+  id: PropTypes.string.isRequired,
+  location: PropTypes.object.isRequired,
+  height: PropTypes.number.isRequired,
+  mapWidth: PropTypes.number
+};

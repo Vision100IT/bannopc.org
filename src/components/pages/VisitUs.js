@@ -88,7 +88,7 @@ export default function VisitUs(pageData, slug) {
                                         {loading === false && pageExists ? <div className="content" dangerouslySetInnerHTML={{ __html: content }}></div> : ''}
                                         {loading === true ? <div className="content">Loading</div> : ''}
                                         {loading === false && pageExists === false ? <div className="contetnt">{content}</div> : ''}
-                                        {loading === false ? <WhereToFindUs id="map_canvas" height="450px" colWidths="col-md-12 col-xs-12" /> : ''}
+                                        {loading === false ? <WhereToFindUs id="map_canvas" height={450} colWidths="col-md-12 col-xs-12" /> : ''}
                                     </div>
                                 </div>
                             </div>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import GoogleMap from '../GoogleMap';
+import GoogleMap from '../models/GoogleMap';
 
 
 class WhereToFindUs extends Component {
@@ -11,7 +11,12 @@ class WhereToFindUs extends Component {
             <div className="block block-block">
               <h2 >Where to Find Us</h2>
               <div className="content">
-                <GoogleMap id="map_canvas" height={this.props.height} width="100%" />
+                <GoogleMap
+                  id="find-us-map"
+                  location={{ lat: -38.048737, lng: 144.172359 }}
+                  height={this.props.height}
+                  disableUI={false}
+                />	
                 <div><a href="https://goo.gl/maps/x6aitfUS8ZU2">Bannockburn Presbyterian Church</a></div>
                 <div>10am Sundays</div>
                 <div>18 Moore Street</div>

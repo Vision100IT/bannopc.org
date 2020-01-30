@@ -5,6 +5,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.27",
     "@emotion/styled": "^10.0.27",
+    "@react-google-maps/api": "^1.8.2",
     "ajv": "^6.0.0",
     "isomorphic-fetch": "^2.2.1",
     "jquery": "^3.3.1",

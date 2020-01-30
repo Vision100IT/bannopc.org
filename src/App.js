@@ -62,7 +62,7 @@ export default function App() {
           )}
         />
         <Route path="/:path" render={() => <OtherPageWrapper pagesData={pagesData} />} />
-        <Route path="*" component={Footer} />
+        <Route path="*" render={({match}) => <Footer />} />
       </div>
     </Router>
   ) : ('');

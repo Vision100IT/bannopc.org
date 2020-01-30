@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 //import LatestSermon from './LatestSermon';
-import WhereToFindUs from './WhereToFindUs';
+//import WhereToFindUs from './WhereToFindUs';
 //import UpcomingEvents from './UpcomingEvents';
 
 class HomePageContent extends Component {

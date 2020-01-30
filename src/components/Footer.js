@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import GoogleMap from './GoogleMap';
+import Map from './models/GoogleMap';
 import LatestSermon from './homepage/LatestSermon';
+
 
 class Footer extends Component {
   render() {
@@ -22,7 +23,13 @@ class Footer extends Component {
                       <div className="footer-address text-center">
                         {/*<i className="icon ion-ios7-location-outline size-32 margin-bottom-20"></i>*/}
                         <div style={{ width: "50%", margin: "0 auto", paddingBottom: "15px" }}>
-                          <GoogleMap id="map_canvas_footer" height="200px" width="200px"></GoogleMap>
+                          <Map
+                            id="footer-map"
+                            location={{ lat: -38.048737, lng: 144.172359 }}
+                            height={200}
+                            mapWidth={200}
+                            disableUI={true}
+                          />	
                         </div>
                         <p>
                           Sundays 10am, <a href="https://goo.gl/maps/x6aitfUS8ZU2">18 Moore Street</a>,<br />
