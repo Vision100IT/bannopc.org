@@ -18,7 +18,7 @@
     "react-iframe": "^1.1.0",
     "react-responsive-audio-player": "^1.5.0",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "3.3.0",
+    "react-scripts": "3.4.0",
     "react-waypoint": "^8.0.3",
     "validator": "^10.8.0"
   },
