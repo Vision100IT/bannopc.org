@@ -32,7 +32,7 @@ export default function GenericAPIPage(pageData, slug) {
 
     var pageHeader = "";
     var content = "";
-    if (pageExists && data) {
+    if (pageExists && data.pageData) {
         //page exists
         console.log(data)
         pageHeader = data.pageData.header_image ? <img className="img img-responsive" src={data.pageData.header_image} alt="" ></img> : (
@@ -85,9 +85,8 @@ export default function GenericAPIPage(pageData, slug) {
                             <div className="region region-content">
                                 <div id="block-system-main" className="block block-system">
                                     <div className="content">
-                                        {loading === false && pageExists ? <div className="content" dangerouslySetInnerHTML={{ __html: content }}></div> : ''}
+                                        {loading === false && pageExists && data.pageData ? <div className="content" dangerouslySetInnerHTML={{ __html: content }}></div> : 'Sorry that page could not be found.'}
                                         {loading === true ? <div className="content">Loading</div> : ''}
-                                        {loading === false && pageExists === false ? <div className="contetnt">{content}</div> : ''}
                                     </div>
                                 </div>
                             </div>

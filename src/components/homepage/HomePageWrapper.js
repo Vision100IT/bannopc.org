@@ -2,6 +2,7 @@ import React from 'react';
 //import Slider from './Slider';
 import sliderimg from '../../assets/welcome1.png'
 import styled from '@emotion/styled';
+import Welcome from './Welcome';
 
 const SliderImg = styled('img')`
   width:100%;
@@ -19,9 +20,9 @@ export default function HomePageWrapper() {
         <SliderWrapper>
           <SliderImg className="img-responsive img-full-width" src={sliderimg} width="1440" height="600" />
         </SliderWrapper>
-        {/*<Welcome />
-          <HomePageContent />*/}
+        <Welcome />
+        {/*}  <HomePageContent />*/}
       </div>}
-      </section>
+    </section>
   );
 }

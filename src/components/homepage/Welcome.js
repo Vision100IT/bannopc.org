@@ -12,22 +12,17 @@ class Welcome extends Component {
 
                 <div className="region region-content">
 
-                  <div className="block block-system">
 
+                  <div className="content">
 
                     <div className="content">
-                      <div className="node node-page clearfix">
-
-                        <div className="content">
-                          <div className="field field-name-body field-type-text-with-summary field-label-hidden"><div className="field-items">
-                            <div className="field-item even">
-
-                            </div>
-                          </div></div>  </div>
-
+                      <div className="text-center">
+                        <a href="/covid19"><button className="btn btn-primary">For Those in Need in COVID-19</button></a>
                       </div>
                     </div>
-                  </div>  </div>
+
+                  </div>
+                </div>
 
               </div> {/* /main-content-region */}
             </div> {/* /row */}
