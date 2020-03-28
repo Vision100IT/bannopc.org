@@ -29,6 +29,7 @@ import './assets/css/fontyourface/font.css';
 
 import './assets/nestor/css/color/brown.css';
 import './assets/css/custom.css';
+import './assets/css/notification.css';
 
 
 
@@ -62,7 +63,7 @@ export default function App() {
           )}
         />
         <Route path="/:path" render={() => <OtherPageWrapper pagesData={pagesData} />} />
-        <Route path="*" render={({match}) => <Footer />} />
+        <Route path="*" render={({ match }) => <Footer />} />
       </div>
     </Router>
   ) : ('');
