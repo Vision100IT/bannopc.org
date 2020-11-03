@@ -26,10 +26,8 @@ class SiteNotification extends Component {
 
                 <h5 className="text-center">
                   <p>At Bannockburn, we want to remain socially and spiritually connected, however we do recognise the prudence of physical distancing and the need to flatten the curve of the spread of COVID-19.</p>
-
-                  <p>We are no longer able to physically gather together, but please tune in to our YouTube channel at 10am each Sunday and let’s continue to worship together.</p>
-
-                  <p>Our Youtube channel can be found <a href="https://www.youtube.com/channel/UCAjweVNxQ_A_jOdCwv_TfVA/">here</a>.</p>
+                  <br/>
+                  <p>In this time of changing restrictions we're currently meeting outdoors but this could change in the current climate so please contact us here and we'd love to let you know what's going on this Sunday!</p>
                 </h5>
               </span>
             </div>

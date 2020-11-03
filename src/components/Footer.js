@@ -69,7 +69,7 @@ class Footer extends Component {
                         <i className="icon ion-social-rss-outline size-32 margin-bottom-20" style={{ marginLeft: "10px" }}></i>
                         <p>
                           <a href="mailto:info@bannopc.org">info@bannopc.org</a><br /><br />
-                          <a href="http://facebook.com/bannockburnpressiechurch" target="_blank" rel="noreferrer noopener">facebook.com/bannockburnpressiechurch</a><br />
+                          <a href="http://facebook.com/bannockburnpressychurch" target="_blank" rel="noreferrer noopener">facebook.com/bannockburnpressychurch</a><br />
                           <a href="https://www.youtube.com/channel/UCAjweVNxQ_A_jOdCwv_TfVA/videos" target="_blank" rel="noreferrer noopener">Bannockburn on YouTube</a><br />
                           <a href="https://itunes.apple.com/au/podcast/bannockburn-presbyterian-church/id1440112965?mt=2" target="_blank" rel="noreferrer noopener">Subscribe to Our Podcast</a>
                         </p>
