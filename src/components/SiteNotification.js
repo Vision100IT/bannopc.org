@@ -27,7 +27,7 @@ class SiteNotification extends Component {
                 <h5 className="text-center">
                   <p>At Bannockburn, we want to remain socially and spiritually connected, however we do recognise the prudence of physical distancing and the need to flatten the curve of the spread of COVID-19.</p>
                   <br/>
-                  <p>In this time of changing restrictions we're currently meeting outdoors but this could change in the current climate so please contact us here and we'd love to let you know what's going on this Sunday!</p>
+                  <p>In this time of changing restrictions we're currently meeting outdoors @ 9am but this could change in the current climate so please contact us here and we'd love to let you know what's going on this Sunday!</p>
                 </h5>
               </span>
             </div>
