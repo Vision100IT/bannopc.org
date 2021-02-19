@@ -1,137 +1,175 @@
-import React, { Component } from 'react';
-import Map from './models/GoogleMap';
-import LatestSermon from './homepage/LatestSermon';
+/** @jsx jsx */
+import { useState, useEffect } from 'react';
+import styled from '@emotion/styled';
+import { jsx, css } from '@emotion/core';
+import {
+  /*IoIosPin,*/
+  IoIosMail,
+  IoLogoFacebook,
+  IoLogoTwitter,
+  IoLogoYoutube
+} from 'react-icons/io';
 
+import {
+  FaRss,
+  FaEnvelope
+} from 'react-icons/fa'
+import Map from './models/google-map'
+import { fetchDrupalData } from '../utils/fetch-functions';
+import LatestSermon from './homepage/latest-sermon'
 
-class Footer extends Component {
-  render() {
-    return (
-      <section>
-        {/* Footer Columns region */}
-
-        <div id="footer-columns-region" className="footer-columns region-30 block-30 bg-color-grayDark2 text-color-light">
-          <div className="container">
-            <div className="row">
-
-              <div id="footer-first-column-region" className="footer-first-column col-xs-12 col-md-4">
-                <div className="region region-footer-first-column">
-
-                  <div className="block block-block">
-
-
-                    <div className="content">
-                      <div className="footer-address text-center">
-                        {/*<i className="icon ion-ios7-location-outline size-32 margin-bottom-20"></i>*/}
-                        <div style={{ width: "50%", margin: "0 auto", paddingBottom: "15px" }}>
-                          <Map
-                            id="footer-map"
-                            location={{ lat: -38.048737, lng: 144.172359 }}
-                            height={200}
-                            mapWidth={200}
-                            disableUI={true}
-                          />	
-                        </div>
-                        <p>
-                          Sundays 10am, <a href="https://goo.gl/maps/x6aitfUS8ZU2">18 Moore Street</a>,<br />
-                          Bannockburn, Victoria, 3331
-                        </p>
-                      </div> {/* /footer-address */}  </div>
-                  </div>
-                </div>
-              </div> {/* /footer-first-column-region */}
-
-              <div id="footer-second-column-region" className="footer-second-column col-xs-12 col-md-4">
-                <div className="region region-footer-second-column">
-
-                  <div id="block-block-8" className="block block-block">
-
-
-                    <div className="content">
-                      {/*<div className="footer-mail text-center">
-                        
-                      </div>*/}
-                      <LatestSermon />
-                    </div>
-                  </div>  </div>
-              </div> {/* /footer-second-column-region */}
-
-              <div id="footer-third-column-region" className="footer-third-column col-xs-12 col-md-4">
-                <div className="region region-footer-third-column">
-
-                  <div className="block block-block">
-
-
-                    <div className="content">
-                      <div className="footer-phone text-center">
-                        <i className="icon ion-ios7-email-outline size-32 margin-bottom-20"></i>
-                        <i className="icon ion-social-facebook-outline size-32 margin-bottom-20" style={{ marginLeft: "10px" }}></i>&nbsp;
-                        <i className="icon ion-social-youtube-outline size-32 margin-bottom-20" style={{ marginLeft: "10px" }}></i>
-                        <i className="icon ion-social-rss-outline size-32 margin-bottom-20" style={{ marginLeft: "10px" }}></i>
-                        <p>
-                          <a href="mailto:info@bannopc.org">info@bannopc.org</a><br /><br />
-                          <a href="http://facebook.com/bannockburnpressychurch" target="_blank" rel="noreferrer noopener">facebook.com/bannockburnpressychurch</a><br />
-                          <a href="https://www.youtube.com/channel/UCAjweVNxQ_A_jOdCwv_TfVA/videos" target="_blank" rel="noreferrer noopener">Bannockburn on YouTube</a><br />
-                          <a href="https://itunes.apple.com/au/podcast/bannockburn-presbyterian-church/id1440112965?mt=2" target="_blank" rel="noreferrer noopener">Subscribe to Our Podcast</a>
-                        </p>
-                      </div>  </div>
-                  </div>  </div>
-              </div> {/* /footer-third-column-region */}
-
-
-            </div> {/* /row */}
-          </div> {/* /container */}
-        </div> {/* /footer-columns-region */}
-
-        {/* /Footer Columns region */}
-
-        {/* Footer region */}
-
-        <footer className="region-10 block-10 bg-color-grayDark1 text-color-light">
-          <div className="container">
-            <div className="row">
-
-              <div id="footer-left-region" className="footer-left region-bottom-sm-0 text-center-sm footer_left col-xs-12 col-md-6">
-                <div className="region region-footer-left">
-
-                  <div id="block-block-10" className="block block-block">
-
-
-                    <div className="content">
-                      <div className="copyright">
-                        <p>Website built and maintained by <a href="http://newfrontdoor.org">New Front Door</a></p>
-                      </div> {/* /copyright */}  </div>
-                  </div>  </div>
-              </div> {/* /footer-left-region */}
-
-              <div id="footer-right-region" className="footer-right region-top-sm-0 text-right text-center-sm footer_right col-xs-12 col-md-6">
-                <div className="region region-footer-right">
-
-                  <div className="block block-block">
-
-
-                    <div className="content">
-                      <div className="social-networks-footer">
-                        <a href="https://www.facebook.com/NewFrontDoorIT/"><i className="icon ion-social-facebook"></i></a>
-                        <a href="https://twitter.com/NewFrontDoorIT"><i className="icon ion-social-twitter"></i></a>
-                        <a href="mailto:contactus@newfrontdoor.org"><i className="icon ion-email"></i></a>
-                      </div> {/* /social-networks-footer */}  </div>
-                  </div>  </div>
-              </div> {/* /footer-right-region */}
-
-            </div> {/* /row */}
-          </div> {/* /container */}
-        </footer>
-
-        {/* /Footer region */}
-
-        {/* Back to top button  */}
-        <div id="back-to-top">
-          <i className="ion-ios7-arrow-up"></i>
-        </div>
-        {/* End of Back to top button */}
-      </section >
-    );
+const icon = css`
+  stroke: white;
+  stroke-width: 20px;
+  fill: none;
+  width: 1.3em;
+  height: 1.3em;
+  fill: #f0f0f0;
+  @media (min-width: 700px) {
+    margin-bottom: '20px';
   }
-}
+`;
 
-export default Footer;
+const iconOutline = css`
+stroke: white;
+stroke-width: 20px;
+fill: none;
+width: 2em;
+height: 2em;
+margin-left: 3px;
+@media (min-width: 700px) {
+  margin-bottom: '20px';
+}
+`;
+
+const Grid = styled('div')`
+  display: grid;
+  grid-template-columns: 1fr;
+  color: #f0f0f0;
+  background-color: #2b2b2b;
+  padding: 40px 7.5vw 20px 7.5vw;
+  @media (min-width: 955px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 'footer-left footer-centre footer-right';
+  }
+  @media (max-width: 954px) {
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+  a:hover{
+    color: #fff;
+
+  }
+`;
+
+const MetaGrid = styled('div')`
+  display: grid;
+  color: #fff;
+  grid-template-columns: 1fr 1fr;
+  background-color: #222222;
+  padding: 0 10vw;
+  align-items: center;
+  a:hover{
+    color: #fff;
+  }
+`;
+
+const centered = css`
+  text-align: center;
+`;
+
+const SermonWrapper = styled('div')`
+max-width: 300px;
+text-align: center;
+display: inline-block;
+`;
+
+export default function Footer({ globalSermons, setGlobalSermons }) {
+  const [sermons, setSermons] = useState(globalSermons);
+  useEffect(() => {
+    setSermons(globalSermons);
+  }, [globalSermons]);
+
+  useEffect(() => {
+    if (!sermons) {
+      fetchDrupalData('sermons', {}).then(response => {
+        setGlobalSermons(response);
+      });
+    }
+  }, [sermons, setGlobalSermons]);
+
+  console.log(sermons)
+
+  return (
+    <section>
+      <Grid>
+        <div css={centered}>
+          <div style={{ display: "inline-block" }}>
+            <Map
+              id="footer-map"
+              location={{ lat: -38.048737, lng: 144.172359 }}
+              height={200}
+              mapWidth={200}
+              disableUI={true}
+            />
+          </div>
+          <p>
+            Sundays 10am, <a href="https://goo.gl/maps/x6aitfUS8ZU2">18 Moore Street</a>,<br />
+            Bannockburn, Victoria, 3331
+          </p>
+        </div>
+        <div css={centered}>
+          <SermonWrapper><LatestSermon latestSermon={sermons ? sermons[0] : ''} /></SermonWrapper>
+        </div>
+        <div css={centered}>
+          <FaEnvelope css={iconOutline} /> <IoLogoFacebook css={iconOutline} /> <IoLogoYoutube css={iconOutline} /> <FaRss css={iconOutline} />
+          <p><a href="mailto:info@bannopc.org">info@bannopc.org</a></p>
+          <p>
+            <a
+              href="http://facebook.com/bannockburnpressychurch"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              facebook.com/bannockburnpressychurch
+            </a>
+            <br />
+            <a
+              href="https://www.youtube.com/channel/UCAjweVNxQ_A_jOdCwv_TfVA/videos"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Bannockburn on YouTube
+            </a>
+            <br />
+            <a
+              href="https://itunes.apple.com/au/podcast/bannockburn-presbyterian-church/id1440112965?mt=2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Subscribe to Our Podcast
+            </a>
+          </p>
+        </div>
+      </Grid>
+      <MetaGrid>
+        <div>
+          <p>
+            Website built and maintained by{' '}
+            <a href="http://newfrontdoor.org">New Front Door</a>
+          </p>
+        </div>
+        <div css={{ textAlign: 'right' }}>
+          <a href="https://www.facebook.com/NewFrontDoorIT/">
+            <IoLogoFacebook css={icon} />
+          </a>
+          <a href="https://twitter.com/NewFrontDoorIT">
+            <IoLogoTwitter css={icon} />
+          </a>
+          <a href="mailto:contactus@newfrontdoor.org">
+            <IoIosMail css={icon} />
+          </a>
+        </div>
+      </MetaGrid>
+    </section>
+  );
+}

@@ -1,36 +1,31 @@
-import React, { Component } from 'react';
+import React from 'react';
+import ContentWrapper from '../content-wrapper';
+import styled from '@emotion/styled';
+import { Link } from 'react-router-dom';
 
-
-class Welcome extends Component {
-  render() {
-    return (
-      <section>
-        <div id="content-region">
-          <div className="container">
-            <div className="row">
-              <div id="main-content-region" className="main-content col-xs-12">
-
-                <div className="region region-content">
-
-
-                  <div className="content">
-
-                    <div className="content">
-                      <div className="text-center">
-                        <a href="/covid19"><button className="btn btn-primary">For Those in Need in COVID-19</button></a>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-
-              </div> {/* /main-content-region */}
-            </div> {/* /row */}
-          </div> {/* /container */}
-        </div> {/* /content-region */}
-      </section>
-    );
-  }
+const Button = styled('button')`
+display: inline-block;
+border-color: #c2b49a;
+color: #c2b49a;
+padding: 7px 35px;
+background: transparent;
+border: 2px solid;
+cursor: pointer;
+:active,
+:hover{
+  border-color: #c2b49a;
+  background-color: #c2b49a;
+  color: #fff;
+  
 }
+`
 
-export default Welcome;
+export default function Welcome() {
+  return (
+    <ContentWrapper>
+      <div style={{ textAlign: "center" }}>
+        <Link to="/covid19"><Button className="btn btn-primary">For Those in Need in COVID-19</Button></Link>
+      </div>
+    </ContentWrapper >
+  );
+}

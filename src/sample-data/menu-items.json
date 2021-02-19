@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "title": "Who We Are",
+      "submenu": {
+        "blurb": "Learn more about us...",
+        "menus": [
+          {
+            "header": "",
+            "items": [
+              {
+                "name": "Who We Are",
+                "url": "whoweare"
+              },
+              {
+                "name": "Mission & Cultural Core",
+                "url": "missionandculturalcore"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "What We Do",
+      "slug": "whatwedo"
+    },
+    {
+      "name": "Visit Us",
+      "slug": "visitus",
+      "freshLoad": true
+    },
+    {
+      "name": "Sermons",
+      "slug": "sermons"
+    },
+    {
+      "name": "Resources",
+      "slug": "resources"
+    },
+    {
+      "name": "Contact Us",
+      "slug": "contact"
+    }
+  ]
+}
